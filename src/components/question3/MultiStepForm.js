@@ -4,6 +4,11 @@ function MultiStepForm() {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [payment, setPayment] = useState("");
+
+  const hundleClicked=(e)=>{
+    e.preventDefault();
+    console.log(`name: ${name} address: ${address} payment:${payment}`)
+  }
   return (
     <form onSubmit={(e) => e.preventDefault()} className="comp">
       <h4>Multistep form</h4>
@@ -39,7 +44,7 @@ function MultiStepForm() {
         </>
       )}
       <br />
-      <button type="submit">Submit</button>
+      <button type="submit" onClick={hundleClicked}>Submit</button>
     </form>
   );
 }

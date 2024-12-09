@@ -37,64 +37,154 @@ import ModuleForm from "./components/question30/ModuleForm";
 function App() {
   return (
     <div style={{ margin: "10px" }}>
-      <h1 style={{color:'purple'}}>1. Components</h1>
-      <h4>1.Create a functional component that displays a welcome message and another 
-      component that displays the current date.</h4>
+      <h1 style={{ color: "purple" }}>1. Components</h1>
+      <h4>
+        1.Create a functional component that displays a welcome message and
+        another component that displays the current date.
+      </h4>
       <Welcome />
       <CurrentDate />
-      <h4>2.Build a parent component with a list of hobbies and a child component that 
-      displays each hobby.</h4>
+      <h4>
+        2.Build a parent component with a list of hobbies and a child component
+        that displays each hobby.
+      </h4>
       <HobbyList />
-      <h4>3.Create a reusable button component with customizable text and color props.</h4>
+      <h4>
+        3.Create a reusable button component with customizable text and color
+        props.
+      </h4>
       <Button text={"Hello guys"} color={"red"} />
-      <h4>4.Design a profile card component that accepts name, age, and email as prop</h4>
+      <h4>
+        4.Design a profile card component that accepts name, age, and email as
+        prop
+      </h4>
       <ProfileCard name={"dushime"} age={"24"} email={"dux@gmail.com"} />
-      <h4>5.Build a component to display a list of items using the .map() function</h4>
+      <h4>
+        5.Build a component to display a list of items using the .map() function
+      </h4>
       <ItemList />
-      <h1 style={{color:'purple'}}>2. Events</h1>
-      <h4>6.Create a button that toggles between "ON" and "OFF" states when clicked</h4>
+      <h1 style={{ color: "purple" }}>2. Events</h1>
+      <h4>
+        6.Create a button that toggles between "ON" and "OFF" states when
+        clicked
+      </h4>
       <Toggle />
       <h4>7.Build a counter component with increment and decrement buttons.</h4>
       <Counter />
-      <h4>8.Create a component that changes the background color of a div when hovered 
-      over.</h4>
+      <h4>
+        8.Create a component that changes the background color of a div when
+        hovered over.
+      </h4>
       <ColorDiv />
-      <h4>9.Build a form that logs the user's input to the console when the form is submitted.</h4>
+      <h4>
+        9.Build a form that logs the user's input to the console when the form
+        is submitted.
+      </h4>
       <FormLog />
-      <h4>10.Create a dropdown menu component that shows and hides options when clicked.</h4>
+      <h4>
+        10.Create a dropdown menu component that shows and hides options when
+        clicked.
+      </h4>
       <DropDown />
-      <h1 style={{color:'purple'}}>3. Forms Handling</h1>
-      <h4>11..Create a simple login form with fields for username and password. </h4>
+      <h1 style={{ color: "purple" }}>3. Forms Handling</h1>
+      <h4>
+        11..Create a simple login form with fields for username and password.{" "}
+      </h4>
       <LoginForm />
-      <h4>12.Build a controlled form with a single input field and display the entered value 
-      below the form </h4>
+      <h4>
+        12.Build a controlled form with a single input field and display the
+        entered value below the form{" "}
+      </h4>
       <CtrldForm />
       <h4>13.Design a form with validation for email and password fields. </h4>
       <ValidForm />
-      <h4>14.Create a multi-step form where users can fill in details step-by-step (e.g., name, 
-        address, and payment information). </h4>
+      <h4>
+        14.Create a multi-step form where users can fill in details step-by-step
+        (e.g., name, address, and payment information).{" "}
+      </h4>
       <MultiStepForm />
-      <h4>15.Build a form with multiple checkbox inputs and display the selected options. </h4>
+      <h4>
+        15.Build a form with multiple checkbox inputs and display the selected
+        options.{" "}
+      </h4>
       <CheckForm />
-      <h1 style={{color:'purple'}}>4. Routing</h1>
+      <h1 style={{ color: "purple" }}>4. Routing</h1>
       <h4>16, 17, 18, 19, 20 </h4>
       <Router>
         <nav className="comp">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
+          <ul
+            style={{
+              display: "flex ",
+              gap: "19px",
+              justifyContent: "spacebetween",
+            }}
+          >
+            <li style={{ listStyle: "none", textDecoration: "none" }}>
+              <li style={{ listStyle: "none", textDecoration: "none" }}>
+                <Link
+                  to="/"
+                  style={{
+                    textDecoration: "none",
+                    fontWeight: "bold",
+                    color: "black",
+                    ":hover": { color: "blue" },
+                  }}
+                >
+                  Home
+                </Link>
+              </li>
             </li>
-            <li>
-              <Link to="/about">About</Link>
+            <li style={{ listStyle: "none", textDecoration: "none" }}>
+              <Link
+                to="/about"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  color: "black",
+                  ":hover": { color: "blue" },
+                }}
+              >
+                About
+              </Link>
             </li>
-            <li>
-              <Link to="/contact">Contact</Link>
+            <li style={{ listStyle: "none", textDecoration: "none" }}>
+              <Link
+                to="/contact"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  color: "black",
+                  ":hover": { color: "blue" },
+                }}
+              >
+                Contact
+              </Link>
             </li>
-            <li>
-              <Link to="/products/123">Sample Product</Link>
+            <li style={{ listStyle: "none", textDecoration: "none" }}>
+              <Link
+                to="/products/123"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  color: "black",
+                  ":hover": { color: "blue" },
+                }}
+              >
+                Product
+              </Link>
             </li>
-            <li>
-              <Link to="/blog">Blog</Link>
+            <li style={{ listStyle: "none", textDecoration: "none" }}>
+              <Link
+                to="/blog"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  color: "black",
+                  ":hover": { color: "blue" },
+                }}
+              >
+                Blog
+              </Link>
             </li>
           </ul>
         </nav>
@@ -117,33 +207,55 @@ function App() {
       </h4>
       <h4>19. </h4>
       <h4>20. </h4> */}
-      <h1 style={{color:'purple'}}>5. React.memo</h1>
-      <h4>21.Create a parent component that passes a prop to a child component. Use 
-      React.memo to prevent the child component from re-rendering unnecessarily </h4>
+      <h1 style={{ color: "purple" }}>5. React.memo</h1>
+      <h4>
+        21.Create a parent component that passes a prop to a child component.
+        Use React.memo to prevent the child component from re-rendering
+        unnecessarily{" "}
+      </h4>
       <ParentMemo />
-      <h4>22.Build a component that displays a counter. Use React.memo to optimize a list of 
-      unrelated items from re-rendering. </h4>
+      <h4>
+        22.Build a component that displays a counter. Use React.memo to optimize
+        a list of unrelated items from re-rendering.{" "}
+      </h4>
       <CounterList />
-      <h4>23.Create a "heavy calculation" component that uses React.memo to optimize 
-      performance. </h4>
+      <h4>
+        23.Create a "heavy calculation" component that uses React.memo to
+        optimize performance.{" "}
+      </h4>
       <Heavy />
-      <h4>24.Build a todo list app where the list component is memoized to prevent re-renders 
-      when the input changes. </h4>
+      <h4>
+        24.Build a todo list app where the list component is memoized to prevent
+        re-renders when the input changes.{" "}
+      </h4>
       <Todo />
-      <h4>25. Implement a component that shows live time updates but prevents unnecessary 
-      re-renders of static UI parts.</h4>
+      <h4>
+        25. Implement a component that shows live time updates but prevents
+        unnecessary re-renders of static UI parts.
+      </h4>
       <LiveTime />
-      <h1 style={{color:'purple'}}>6. Registration Forms</h1>
-      <h4>26.Add validation to ensure the email is in the correct format and phone number is 
-      numeric. </h4>
+      <h1 style={{ color: "purple" }}>6. Registration Forms</h1>
+      <h4>
+        26.Add validation to ensure the email is in the correct format and phone
+        number is numeric.{" "}
+      </h4>
       <LecturerForm />
-      <h4>27.Validate the Student ID to ensure it contains only alphanumeric characters. </h4>
+      <h4>
+        27.Validate the Student ID to ensure it contains only alphanumeric
+        characters.{" "}
+      </h4>
       <StudentForm />
-      <h4>28. Add a dropdown to select the vehicle type (e.g., car, truck, motorcycle)</h4>
+      <h4>
+        28. Add a dropdown to select the vehicle type (e.g., car, truck,
+        motorcycle)
+      </h4>
       <DriverForm />
       <h4>29.Validate that the Published Year is a four-digit number. </h4>
       <BookForm />
-      <h4>30. Ensure the Credits field accepts only numeric values and is required.</h4>
+      <h4>
+        30. Ensure the Credits field accepts only numeric values and is
+        required.
+      </h4>
       <ModuleForm />
     </div>
   );

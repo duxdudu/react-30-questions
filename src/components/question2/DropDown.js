@@ -22,14 +22,16 @@ function DropDown() {
         <div
           style={{
             border: "1px solid black",
-            width: "fit-content",
+            width: "110px",
             padding: "5px",
             margin: "5px",
           }}
         >
           {options.map((option, index) => (
             <div key={index}>
-              <button onClick={() => handleOptionClick(option)}>
+              <button onClick={() => handleOptionClick(option)} 
+                style={{width:"100px"}}
+                >
                 {option}
               </button>
               <br />
