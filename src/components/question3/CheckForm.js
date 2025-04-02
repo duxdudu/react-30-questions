@@ -8,7 +8,7 @@ function CheckForm() {
   const [result, setResult] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    setResult(`${value1}, ${value2}, ${value3}, ${value4}.`);
+    setResult(`${value1 ? value1 +',' :''}  ${value2 ? value2 +',' :''} ${value3 ? value3 +',' :''} ${value4 ? value4 +',' :''}  `);
   };
   return (
     <form onSubmit={handleSubmit} className="comp">

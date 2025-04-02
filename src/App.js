@@ -37,6 +37,8 @@ import ModuleForm from "./components/question30/ModuleForm";
 function App() {
   return (
     <div style={{ margin: "10px" }}>
+      
+
       <h1 style={{ color: "purple" }}>1. Components</h1>
       <h4>
         1.Create a functional component that displays a welcome message and
@@ -53,7 +55,7 @@ function App() {
         3.Create a reusable button component with customizable text and color
         props.
       </h4>
-      <Button text={"Hello guys"} color={"red"} />
+      <Button text={"Holla dieudonne "} color={"red"} />
       <h4>
         4.Design a profile card component that accepts name, age, and email as
         prop
@@ -88,7 +90,7 @@ function App() {
       <DropDown />
       <h1 style={{ color: "purple" }}>3. Forms Handling</h1>
       <h4>
-        11..Create a simple login form with fields for username and password.{" "}
+        11.Create a simple login form with fields for username and password.{" "}
       </h4>
       <LoginForm />
       <h4>
@@ -109,7 +111,7 @@ function App() {
       </h4>
       <CheckForm />
       <h1 style={{ color: "purple" }}>4. Routing</h1>
-      <h4>16, 17, 18, 19, 20 </h4>
+      <h4>Questions of 16, 17, 18, 19, 20 </h4>
       <Router>
         <nav className="comp">
           <ul
@@ -211,7 +213,7 @@ function App() {
       <h4>
         21.Create a parent component that passes a prop to a child component.
         Use React.memo to prevent the child component from re-rendering
-        unnecessarily{" "}
+        unnecessarily
       </h4>
       <ParentMemo />
       <h4>
@@ -221,7 +223,7 @@ function App() {
       <CounterList />
       <h4>
         23.Create a "heavy calculation" component that uses React.memo to
-        optimize performance.{" "}
+        optimize performance.
       </h4>
       <Heavy />
       <h4>

@@ -87,3 +87,14 @@ p[style] {
   color: red;
   text-align: center;
 }
+.intro{
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-color: purple;
+}
+.intro h1 h2{
+  color: white;
+}
+.hoverMe{
+  background-color: blue;
+}

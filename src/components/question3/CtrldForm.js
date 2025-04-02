@@ -21,7 +21,8 @@ function CtrldForm() {
         <br />
         <button type="submit">Submit</button>
       </form>
-      {result}
+       <p>{result}</p>
+      
     </div>
   );
 }

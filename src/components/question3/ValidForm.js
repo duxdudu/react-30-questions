@@ -20,6 +20,7 @@ function ValidForm() {
         id="email"
         onChange={(e) => setEmail(e.target.value)}
       />{" "}
+      <br />
       {emailError && (
         <span style={{ color: "red", fontSize: "11px" }}>
           Please enter a correct email!
@@ -33,6 +34,7 @@ function ValidForm() {
         id="password"
         onChange={(e) => setPassword(e.target.value)}
       />{" "}
+      <br />
       {passwordError && (
         <span style={{ color: "red", fontSize: "11px" }}>
           Please enter a correct password!

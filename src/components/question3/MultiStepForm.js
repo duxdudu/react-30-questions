@@ -7,10 +7,13 @@ function MultiStepForm() {
 
   const hundleClicked=(e)=>{
     e.preventDefault();
-    console.log(`name: ${name} address: ${address} payment:${payment}`)
+    alert(`name: ${name} address: ${address} payment:${payment}`)
+    setName(" ")
+    setAddress("")
+    setAddress("")
   }
   return (
-    <form onSubmit={(e) => e.preventDefault()} className="comp">
+    <form onSubmit={hundleClicked} className="comp">
       <h4>Multistep form</h4>
       <label htmlFor="name">Name: </label>
       <input
@@ -44,7 +47,7 @@ function MultiStepForm() {
         </>
       )}
       <br />
-      <button type="submit" onClick={hundleClicked}>Submit</button>
+      <button type="submit" onClick={hundleClicked} >Submit</button>
     </form>
   );
 }

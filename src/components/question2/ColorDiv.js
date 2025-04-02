@@ -3,10 +3,13 @@ import { useState } from "react";
 function ColorDiv() {
   const [color, setColor] = useState("");
   return (
-    <div className="comp">
+    <div className="comp ">
+      <div>
+
+      </div>
       <div
         onMouseEnter={() => setColor("blue")}
-        onMouseLeave={() => setColor("")}
+        onMouseLeave={() => setColor("green")}
       >
         Hover me!
       </div>
